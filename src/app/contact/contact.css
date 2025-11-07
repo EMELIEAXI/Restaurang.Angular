@@ -1,0 +1,33 @@
+.contact-container {
+    background-color: rgb(211, 208, 208);
+    min-width: 100%;
+  }
+.Contact {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+form textarea {
+  min-height: 100px;
+}
+form input {
+  min-height: 30px;
+}
+@media (max-width: 768px) {
+  /* .Contact {
+    max-width: 250px;
+  } */
+  .contact-container {
+    width: 80%;
+    background-color: white;
+  }
+
+}
