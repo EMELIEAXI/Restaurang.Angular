@@ -1,0 +1,28 @@
+
+<section id="testimonials" class="testimonials-section">
+  <h2 class="title">Vad våra gäster säger</h2>
+  <p class="caption">Små stories från kunder som redan upptäckt våra rätter.</p>
+
+  <div class="testimonials-wrapper">
+    <button class="scroll-btn left" (click)="scrollByCard('left')">‹</button>
+
+    <div class="testimonials-container" #container>
+      <article class="testimonial-card" *ngFor="let t of testimonialsData">
+        <div class="testimonial-image">
+          <img [src]="t.img" [alt]="t.name + ' porträtt'" />
+        </div>
+        <blockquote class="testimonial-quote">“{{ t.quote }}”</blockquote>
+
+        <div class="testimonial-stars">
+          <span *ngFor="let star of [].constructor(5); let i = index" class="star">
+            <!-- {{ i < t.rating ? '★' : '☆' }} -->
+          </span>
+        </div>
+
+        <div class="testimonial-name">{{ t.name }}</div>
+      </article>
+    </div>
+
+    <button class="scroll-btn right" (click)="scrollByCard('right')">›</button>
+  </div>
+</section>

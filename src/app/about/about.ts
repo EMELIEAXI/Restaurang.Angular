@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.css'],
 })
 export class About {
-
+  sushiImg = 'assets/food-3581341_1280.jpg';
 }
+
