@@ -1,0 +1,34 @@
+<nav id="navbar">
+  <div class="nav-logo-container">
+    <a href="#home">
+      <img src="assets/logo.png" alt="Restaurang Logo" />
+    </a>
+  </div>
+
+  <ul class="navbar-links-container">
+    <app-navbar-menu-item
+      *ngFor="let item of menuOptions"
+      [text]="item.text"
+      [href]="item.href">
+    </app-navbar-menu-item>
+
+    <button class="primary-button">Boka nu</button>
+  </ul>
+
+  <div class="navbar-menu-container" (click)="toggleMenu()">
+    <span class="material-symbols-outlined">menu</span>
+  </div>
+
+  <div class="drawer" *ngIf="openMenu" (click)="toggleMenu()">
+    <div class="drawer-content" (click)="$event.stopPropagation()">
+      <ul>
+        <li *ngFor="let item of menuOptions">
+          <a [href]="item.href">
+            <span class="material-symbols-outlined">{{ item.icon }}</span>
+            {{ item.text }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
