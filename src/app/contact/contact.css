@@ -21,6 +21,7 @@ form textarea {
 form input {
   min-height: 30px;
 }
+
 @media (max-width: 768px) {
   /* .Contact {
     max-width: 250px;

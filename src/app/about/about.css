@@ -21,6 +21,12 @@
   display: flex;
   gap: 50px;
 }
+
+    h2 {
+        font-weight: 300;
+    }
+
+
 @media (max-width: 768px) {
   section.about {
     flex-direction: column;
