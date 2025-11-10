@@ -1,16 +1,12 @@
-/* Testimonials */
 .testimonials-section {
   padding: 60px 20px;
-  background: none; /* eller en svag färg om du vill */
-  color: inherit;
+  background: #222; /* svag bakgrund så sektionen syns */
+  color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  /* width: 100%; */
 }
-
 
 .testimonials-header {
   text-align: center;
@@ -22,11 +18,10 @@
   margin: 0 0 8px;
 }
 .testimonials-header .muted {
-  color: rgba(255,255,255,0.7); /* eller #213547 i ljust läge */
+  color: rgba(255,255,255,0.7);
   font-size: 0.95rem;
 }
 
-/* wrapper med pilar + container */
 .testimonials-wrapper {
   position: relative;
   max-width: 1200px;
@@ -35,11 +30,10 @@
   align-items: center;
 }
 
-/* pilar */
 .scroll-btn {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.06);
-  /* color: inherit; */
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
   width: 44px;
   height: 44px;
   border-radius: 20%;
@@ -51,26 +45,19 @@
   margin: 0 10px;
 }
 .scroll-btn:hover { transform: scale(1.05); }
-.scroll-btn.left { order: 0; }
-.scroll-btn.right { order: 2; }
 
-/* själva scrollbara containern */
 .testimonials-container {
-  order: 1;
   display: flex;
   gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding: 10px 8px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.2) transparent;
 }
 
-/* ett kort (kortlayout) */
 .testimonial-card {
-  flex: 0 0 30%; /* bredd på varje kort */
-  background: rgba(255,255,255,0.03);
+  flex: 0 0 30%;
+  background: rgba(255,255,255,0.08);
   border-radius: 10px;
   padding: 18px;
   box-sizing: border-box;
@@ -81,13 +68,11 @@
   align-items: flex-start;
 }
 
-/* bild */
 .testimonial-image {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   overflow: hidden;
-  flex-shrink: 0;
   align-self: center;
 }
 .testimonial-image img {
@@ -96,23 +81,21 @@
   object-fit: cover;
 }
 
-/* citat */
 .testimonial-quote {
-  font-style: normal;
+  font-style: italic;
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.4;
   min-height: 56px;
 }
 
-/* stjärnor */
 .testimonial-stars {
   display: flex;
-  gap: 6px;
-  color: #f2c94c; /* star color */
+  gap: 4px;
+  color: #f2c94c;
+  font-size: 1.2rem;
 }
 
-/* namn */
 .testimonial-name {
   margin-top: 6px;
   font-weight: 600;
@@ -120,46 +103,8 @@
   text-align: left;
 }
 
-/* Anpassning för små skärmar */
 @media (max-width: 768px) {
   .testimonials-section {
     display: none;
   }
 }
-  /* .testimonials-section {
-    width: 100%;
-    padding: 40px 0;
-  }
-
-  .testimonials-wrapper {
-    padding: 0;
-  }
-
-  .scroll-btn {
-    display: none;
-  }
-
-  .testimonials-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 0;
-    padding: 0 10px;
-    scrollbar-width: none; /* göm scrollbar */
-  /* }
-
-  .testimonials-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .testimonial-card {
-    flex: 0 0 100%; /* exakt ett kort per “vy” */
-    /* scroll-snap-align: center; snäpper till mitten */
-    /* background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  } */
-/* } */

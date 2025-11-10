@@ -14,7 +14,7 @@ interface Testimonial {
 
 @Component({
   selector: 'app-testimonials',
-  imports: [],
+  imports: [CommonModule],
   standalone: true,
   templateUrl: './testimonials.html',
   styleUrls: ['./testimonials.css'],
@@ -29,21 +29,21 @@ export class Testimonials {
       name: 'Anna Svensson',
       quote: 'Fantastisk mat och supertrevlig personal!',
       rating: 5,
-      img: 'assets/images/testimonial1.jpg'
+      img: 'assets/avatar-1293744_1280.webp'
     },
     {
       id: 2,
       name: 'Johan Nilsson',
-      quote: 'Bästa pizzan i stan!',
+      quote: 'Bästa Sushin i stan!',
       rating: 4,
-      img: 'assets/images/testimonial2.jpg'
+      img: 'assets/avatar-1293744_1280.webp'
     },
     {
       id: 3,
       name: 'Maria Karlsson',
       quote: 'Mysig atmosfär och prisvärd meny.',
       rating: 5,
-      img: 'assets/images/testimonial3.jpg'
+      img: 'assets/avatar-1293744_1280.webp'
     }
   ];
 
