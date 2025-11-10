@@ -27,6 +27,10 @@
   max-width: 200px;
 }
 
+    h2 {
+        font-weight: 300;
+    }
+
 
 @media (max-width: 768px) {
 .icon-cards-container {
