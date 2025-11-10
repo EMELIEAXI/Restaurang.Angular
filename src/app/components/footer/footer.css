@@ -1,0 +1,26 @@
+.Footer1 {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  line-height: 1.8rem;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.Footer2 {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .Footer2 {
+    flex-direction: column;
+  }
+}
